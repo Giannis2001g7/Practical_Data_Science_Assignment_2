@@ -49,12 +49,14 @@ Models used:
 Logistic Regression
 XGBoost
 Applied TF-IDF vectorization to title and text features.
+Applied K-Fold Cross Validation.
+Imbalance handled with SMOTE.
 Evaluated models using macro-F1 score and selected the best-performing model for each category and feature.
 Outputs:
 Predictions for each feature-model combination saved in submission_ST1.zip.
 Best-performing combination: XGBoost for hazard-category and Logistic Regression for product-category using the title feature.
 
-ST2: Joint Hazard and Product Classification
+ST2: Hazard and Product Classification
 Combines the prediction of hazards and products into a unified task.
 Preprocessing:
 Rare class handling by merging categories with fewer than a threshold number of samples into an other category.
